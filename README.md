@@ -13,7 +13,7 @@ This script is designed for QubesOS. It makes use of Qubes tags (`qvm-tags`) to 
 3. Modify the Python script (`P_CORES` and `E_CORES` variables) to match your CPU topology. The `sudo xenpm get-cpu-topology` can help here.
 4. Also inside `dom0`, execute `sudo chmod +x /usr/local/bin/cpu-pinning.py; sudo systemctl daemon-reload && sudo systemctl
    enable --now cpu-pinning`.
-5. For each VM whose pinnings you want to modify, execute (in `dom0`): `qvm-tags VMNAME CORES_TAG`. 
+5. For each VM whose pinnings you want to modify, execute (in `dom0`): `qvm-tags VMNAME add CORES_TAG`. 
 
 `CORES_TAG` can be one of:
 
