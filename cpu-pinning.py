@@ -7,8 +7,8 @@ import qubesadmin
 import qubesadmin.events
 
 # Intel Ultra 7 155H
-P_CORES = '0,2,4,6,16,18'
-E_CORES = '8,9,10,11,12,13,14,15,20,21'
+P_CORES = '0-7,16-19'
+E_CORES = '8-15,20-21'
 ALL_CORES = 'all'
 
 tag_perf = 'p-cores'
